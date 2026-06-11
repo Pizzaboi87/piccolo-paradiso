@@ -1,0 +1,179 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .flex-between {
+    @apply flex items-center justify-between;
+  }
+
+  .flex-start {
+    @apply flex items-start justify-center;
+  }
+}
+
+@layer components {
+  .screen {
+    @apply h-full bg-surface-page;
+  }
+
+  .screen-content {
+    @apply px-4 pt-4 pb-28;
+  }
+
+  .surface-card {
+    @apply rounded-3xl bg-surface-card border border-border-subtle;
+  }
+
+  .touch-target {
+    @apply min-h-12 min-w-12;
+  }
+
+  .icon-btn {
+    @apply touch-target flex items-center justify-center rounded-full bg-surface-card border border-border-subtle;
+  }
+
+  .section-title {
+    @apply text-2xl font-quicksand-bold text-text-primary;
+  }
+
+  .section-subtitle {
+    @apply text-base font-quicksand text-text-secondary;
+  }
+
+  .cart-btn {
+    @apply touch-target flex items-center justify-center rounded-full bg-text-primary;
+  }
+
+  .cart-badge {
+    @apply absolute -top-2 -right-1 flex items-center justify-center size-5 rounded-full bg-brand-primary;
+  }
+
+  .cart-item {
+    @apply mb-4 flex flex-row items-start gap-4 rounded-2xl border border-border-subtle bg-surface-card p-4;
+  }
+
+  .cart-item__image {
+    @apply size-32 rounded-xl bg-surface-muted flex items-center justify-center;
+  }
+
+  .cart-item__actions {
+    @apply touch-target flex flex-row items-center justify-center rounded-xl bg-brand-primary/10;
+  }
+
+  .custom-btn {
+    @apply h-12 w-full flex-row justify-center rounded-2xl bg-brand-primary px-4;
+  }
+
+  .custom-btn__text {
+    @apply text-base font-quicksand-semibold text-text-inverse;
+  }
+
+  .custom-header {
+    @apply mb-4 w-full flex-row items-center justify-between;
+  }
+
+  .label {
+    @apply mb-2 w-full pl-1 text-base text-start font-quicksand-medium text-text-secondary;
+  }
+
+  .input {
+    @apply h-12 w-full rounded-xl border border-border-strong bg-surface-card px-4 text-base font-quicksand-semibold leading-5 text-text-primary;
+  }
+
+  .filter {
+    @apply mr-2 min-h-12 px-5 rounded-full flex items-center justify-center border border-border-subtle;
+  }
+
+  .menu-card {
+    @apply relative rounded-3xl bg-surface-card px-3.5 pb-9 pt-24 shadow-md shadow-text-primary/10 flex items-center justify-end;
+  }
+
+  .profile-field {
+    @apply flex flex-row items-center justify-start mb-4;
+  }
+
+  .profile-field__icon {
+    @apply mr-3 size-12 rounded-full bg-brand-primary/10 flex items-center justify-center;
+  }
+
+  .searchbar {
+    @apply relative flex-row items-center justify-center w-full rounded-2xl border border-border-subtle bg-surface-card pl-3 pr-2;
+  }
+
+  .tab-icon {
+    @apply flex min-w-20 items-center justify-center gap-1;
+  }
+
+  .offer-card {
+    @apply my-3 flex h-64 w-full flex-row items-stretch rounded-xl shadow-lg;
+  }
+
+  .offer-card__info {
+    @apply flex h-full flex-1 flex-col items-start justify-center gap-2 px-4 py-4;
+  }
+
+  .profile-avatar {
+    @apply relative size-28 rounded-full border-2 border-text-inverse;
+  }
+
+  .profile-edit {
+    @apply absolute bottom-2 right-0 flex size-7 items-center justify-center rounded-full border-2 border-text-inverse bg-brand-primary p-2;
+  }
+
+  .h1-bold {
+    @apply text-3xl font-quicksand-bold text-text-primary;
+  }
+
+  .h3-bold {
+    @apply text-xl font-quicksand-bold text-text-primary;
+  }
+
+  .base-bold {
+    @apply text-lg font-quicksand-bold text-text-primary;
+  }
+
+  .base-semibold {
+    @apply text-lg font-quicksand-semibold text-text-primary;
+  }
+
+  .base-regular {
+    @apply text-lg font-quicksand text-text-secondary;
+  }
+
+  .paragraph-bold {
+    @apply text-base font-quicksand-bold text-text-primary;
+  }
+
+  .paragraph-semibold {
+    @apply text-base font-quicksand-semibold text-text-primary;
+  }
+
+  .paragraph-medium {
+    @apply text-base font-quicksand-medium text-text-secondary;
+  }
+
+  .body-medium {
+    @apply text-sm font-quicksand-medium text-text-secondary;
+  }
+
+  .body-large {
+    @apply text-base font-quicksand-medium text-text-secondary;
+  }
+
+  .body-regular {
+    @apply text-sm font-quicksand text-text-muted;
+  }
+
+  .small-bold {
+    @apply text-xs font-quicksand-bold;
+  }
+}
+
+* {
+  scroll-behavior: smooth;
+}

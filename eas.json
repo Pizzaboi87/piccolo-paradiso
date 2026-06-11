@@ -1,0 +1,33 @@
+{
+  "cli": {
+    "version": ">= 16.10.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "environment": "preview",
+      "env": {
+        "NPM_CONFIG_INCLUDE": "optional"
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "environment": "preview",
+      "env": {
+        "NPM_CONFIG_INCLUDE": "optional"
+      }
+    },
+    "production": {
+      "autoIncrement": true,
+      "environment": "production",
+      "env": {
+        "NPM_CONFIG_INCLUDE": "optional"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

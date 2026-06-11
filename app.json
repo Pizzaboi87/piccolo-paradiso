@@ -1,0 +1,64 @@
+{
+  "expo": {
+    "name": "Piccolo",
+    "slug": "food-order",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/mobile-icon.png",
+    "scheme": "foodorder",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/splash-logo.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#028100"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#028100",
+        "foregroundImage": "./assets/images/mobile-icon.png"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "package": "com.weiser.food",
+      "softwareKeyboardLayoutMode": "resize"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "A profilkép kiválasztásához szükségünk van a galéria elérésére.",
+          "cameraPermission": "A profilkép elkészítéséhez szükségünk van a kamera elérésére."
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-logo.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#028100"
+        }
+      ],
+      ["@stripe/stripe-react-native", {}]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "d65703d7-2870-4ed6-ab49-14d206bf0638"
+      }
+    }
+  }
+}
