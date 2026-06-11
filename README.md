@@ -106,7 +106,7 @@ eas build --platform android --profile preview
 
 APK/test build distribution:
 
-- [Download the application](https://github.com/Pizzaboi87/app-downloads/releases/download/v1.0.0-piccolo/piccolo.apk)
+- [Download the application](https://github.com/Pizzaboi87/piccolo-paradiso/releases/download/release/piccolo.apk)
 
 ---
 
