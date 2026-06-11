@@ -23,9 +23,8 @@ Backend: Appwrite (auth + database + function + storage), payment: Stripe, routi
 2. [DATAMODEL.md](docs/DATAMODEL.md)
 3. [COMPONENTS.md](docs/COMPONENTS.md)
 4. [BACKEND_PERMISSIONS.md](docs/BACKEND_PERMISSIONS.md)
-5. [AI_PROMPT_LOG.md](docs/AI_PROMPT_LOG.md)
-6. [piccolo_design.pdf](docs/piccolo_design.pdf)
-7. [piccolo_design.fig](docs/piccolo_design.fig)
+5. [piccolo_design.pdf](docs/piccolo_design.pdf)
+6. [piccolo_design.fig](docs/piccolo_design.fig)
 
 ---
 
